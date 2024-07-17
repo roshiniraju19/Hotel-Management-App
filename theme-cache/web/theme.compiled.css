@@ -27655,4 +27655,9 @@ input[type=checkbox].three-state-checkbox + .control-label {
   border-width: 0;
 }
 
+.pageheader-title {
+  background-color: aqua;
+  font-family: Payprus;
+}
+
 /*# sourceMappingURL=theme.compiled.css.map */
