@@ -21,20 +21,24 @@ import mxmodelreflection.proxies.TestPattern;
 
 public class TestThePattern extends CustomJavaAction<java.lang.Boolean>
 {
-	private IMendixObject __TestPatternObj;
-	private mxmodelreflection.proxies.TestPattern TestPatternObj;
+	/** @deprecated use TestPatternObj.getMendixObject() instead. */
+	@java.lang.Deprecated(forRemoval = true)
+	private final IMendixObject __TestPatternObj;
+	private final mxmodelreflection.proxies.TestPattern TestPatternObj;
 
-	public TestThePattern(IContext context, IMendixObject TestPatternObj)
+	public TestThePattern(
+		IContext context,
+		IMendixObject _testPatternObj
+	)
 	{
 		super(context);
-		this.__TestPatternObj = TestPatternObj;
+		this.__TestPatternObj = _testPatternObj;
+		this.TestPatternObj = _testPatternObj == null ? null : mxmodelreflection.proxies.TestPattern.initialize(getContext(), _testPatternObj);
 	}
 
 	@java.lang.Override
 	public java.lang.Boolean executeAction() throws Exception
 	{
-		this.TestPatternObj = this.__TestPatternObj == null ? null : mxmodelreflection.proxies.TestPattern.initialize(getContext(), __TestPatternObj);
-
 		// BEGIN USER CODE
 
 		IMendixObjectMember<?> member = null;
