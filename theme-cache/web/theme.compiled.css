@@ -27655,9 +27655,72 @@ input[type=checkbox].three-state-checkbox + .control-label {
   border-width: 0;
 }
 
-.pageheader-title {
-  background-color: aqua;
-  font-family: Payprus;
+.full-page {
+  background-image: url("https://www.itchotels.com/content/dam/itchotels/in/umbrella/itc/hotels/itcgrandchola-chennai/images/overview/overview-desktop/exterior-dusk.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sub-heading1 {
+  color: red;
+}
+
+.booking-box {
+  position: relative;
+  /* Ensure it is positioned relative to its normal position */
+  background-color: rgba(255, 255, 255, 0.5);
+  /* 50% transparent background */
+  border: 1px solid #0a0a0a;
+  /* Dark border */
+  border-radius: 8px;
+  /* Rounded corners */
+  padding: 8px;
+  /* Padding inside the box */
+  margin: 16px auto;
+  /* Center the box with automatic left/right margins */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  max-width: 400px;
+  /* Maximum width of the box */
+  width: 100%;
+  /* Ensure it uses 100% of the max-width */
+  color: #333;
+  /* Text color */
+  font-family: "Arial", sans-serif;
+  /* Font style */
+  z-index: 1000;
+  /* Ensure it is on top of other elements */
+  height: auto;
+  /* Allow the height to be adjusted automatically based on content */
+  min-height: 50px;
+  /* Set a minimum height for the box */
+}
+
+/* Reduce the font size for the content */
+.booking-box h2 {
+  font-size: 1.2em;
+  /* Reduced font size for the heading */
+  margin: 8px 0;
+  /* Reduced margin for the heading */
+}
+
+.booking-box p {
+  font-size: 0.9em;
+  /* Reduced font size for the paragraphs */
+  margin: 4px 0;
+  /* Reduced margin for the paragraphs */
+}
+
+.booking-box .booking-button {
+  padding: 8px 16px;
+  /* Reduced padding inside the button */
+  font-size: 0.9em;
+  /* Reduced font size for the button */
+  margin-top: 8px;
+  /* Reduced margin at the top */
 }
 
 /*# sourceMappingURL=theme.compiled.css.map */

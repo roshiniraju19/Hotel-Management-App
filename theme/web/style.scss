@@ -1,0 +1,62 @@
+.full-page{
+    background-image: url('https://www.itchotels.com/content/dam/itchotels/in/umbrella/itc/hotels/itcgrandchola-chennai/images/overview/overview-desktop/exterior-dusk.png'); // Specify the path to your image
+    background-size: cover; // This makes sure the image covers the entire container
+    background-position: center; // This centers the background image
+    background-repeat: no-repeat; // This prevents the image from repeating
+    width: 100vw; // Set the width to 100% of the viewport width
+    height: 100vh; // Set the height to 100% of the viewport height
+}
+
+// .full-page::before {
+//     content: ''; // This is necessary for the pseudo-element
+//     position: absolute; // Position the overlay absolutely within the container
+//     top: 0;
+//     left: 0;
+//     width: 100%; // Cover the entire width of the container
+//     height: 100%; // Cover the entire height of the container
+//     background-color: rgba(0, 0, 0, 0.5); // Set the overlay color (black) and transparency (0.5 for 50%)
+//     z-index: 1; // Ensure the overlay is on top of the background image
+//   }
+
+//   .pageheader-title {
+//     opacity: 1; // Sets the opacity to 100% (fully opaque)
+//   }
+
+.sub-heading1{
+    color: red;
+}
+
+.booking-box {
+    position: relative; /* Ensure it is positioned relative to its normal position */
+    background-color: rgba(255, 255, 255, 0.5); /* 50% transparent background */
+    border: 1px solid #0a0a0a; /* Dark border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 8px; /* Padding inside the box */
+    margin: 16px auto; /* Center the box with automatic left/right margins */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 400px; /* Maximum width of the box */
+    width: 100%; /* Ensure it uses 100% of the max-width */
+    color: #333; /* Text color */
+    font-family: 'Arial', sans-serif; /* Font style */
+    z-index: 1000; /* Ensure it is on top of other elements */
+    height: auto; /* Allow the height to be adjusted automatically based on content */
+    min-height: 50px; /* Set a minimum height for the box */
+  }
+  
+  /* Reduce the font size for the content */
+  .booking-box h2 {
+    font-size: 1.2em; /* Reduced font size for the heading */
+    margin: 8px 0; /* Reduced margin for the heading */
+  }
+  
+  .booking-box p {
+    font-size: 0.9em; /* Reduced font size for the paragraphs */
+    margin: 4px 0; /* Reduced margin for the paragraphs */
+  }
+  
+  .booking-box .booking-button {
+    padding: 8px 16px; /* Reduced padding inside the button */
+    font-size: 0.9em; /* Reduced font size for the button */
+    margin-top: 8px; /* Reduced margin at the top */
+  }
+  
