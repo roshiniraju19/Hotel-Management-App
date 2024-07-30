@@ -27723,4 +27723,103 @@ input[type=checkbox].three-state-checkbox + .control-label {
   /* Reduced margin at the top */
 }
 
+/* Base card styles */
+.card {
+  background: #ffffff;
+  /* Card background color */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Default shadow */
+  padding: 16px;
+  /* Space inside the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transition for hover effect */
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-8px);
+  /* Lift card up */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Enhanced shadow on hover */
+}
+
+.card-content {
+  font-size: 16px;
+  /* Text size */
+  color: #333;
+  /* Text color */
+  line-height: 1.5;
+  /* Line height for better readability */
+  padding-top: 15px;
+}
+
+/* Optional: Title styling */
+.card-title {
+  font-size: 22px;
+  /* Larger text for titles */
+  font-weight: bold;
+  /* Bold text */
+  margin-bottom: 8px;
+  /* Space below the title */
+}
+
+/* Optional: Subtitle styling */
+.card-subtitle {
+  font-size: 18px;
+  /* Subtitle size */
+  color: #555;
+  /* Lighter color for subtitle */
+  margin-bottom: 16px;
+  /* Space below the subtitle */
+  padding-top: 32px;
+}
+
+/* Base container styles */
+.inclusions-container, .cancellation-rules {
+  background: #ffffff;
+  /* Base background color */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Default shadow */
+  padding: 20px;
+  /* Padding around content */
+  max-width: 800px;
+  /* Maximum width */
+  margin: 20px auto;
+  /* Centered with margin */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transition */
+}
+
+/* Hover effect for both containers */
+.inclusions-container:hover, .cancellation-rules:hover {
+  background: #f1f1f1;
+  /* Slightly darker background on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Enhanced shadow on hover */
+  transform: translateY(-5px);
+  /* Lift the container slightly on hover */
+}
+
+/* Specific styles for cancellation rules with optional gradient */
+.cancellation-rules {
+  background: #ffffff;
+  /* Base background color */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Default shadow */
+  padding: 20px;
+  /* Padding around content */
+  max-width: 800px;
+  /* Maximum width */
+  margin: 20px auto;
+  /* Centered with margin */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transition */
+}
+
 /*# sourceMappingURL=theme.compiled.css.map */
