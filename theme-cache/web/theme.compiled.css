@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("resources/fonts/open-sans/open-sans.css");
+@import url(//codepen.io/chrisdothtml/pen/ojLzJK.css);
 @font-face {
   font-family: "Atlas_Core$Atlas_Filled";
   src: url("./fonts/Atlas_Core$Atlas_Filled.ttf") format("truetype");
@@ -27820,6 +27821,211 @@ input[type=checkbox].three-state-checkbox + .control-label {
   /* Centered with margin */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   /* Smooth transition */
+}
+
+/* Stylish heading container */
+.stylish-heading {
+  font-size: clamp(3rem, 15vmin, 8rem);
+  font-family: "Poppins", sans-serif;
+  color: hsl(210deg, 30%, 24%);
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-top: 100px;
+  /* Adjust as needed to account for header height */
+}
+
+.stylish-heading:before,
+.stylish-heading:after {
+  content: "";
+  position: absolute;
+  top: 95%;
+  width: 150%;
+  aspect-ratio: 3/1;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  border: 6px solid hsl(280deg, 86%, 3%);
+  mask: conic-gradient(from var(--start), white 0 var(--spread), transparent var(--spread));
+  --spread: 140deg;
+  --start: 290deg;
+}
+
+.stylish-heading:after {
+  transform: rotate(-45deg);
+}
+
+/* Header styling */
+.header-main {
+  background-color: hsl(210deg, 30%, 24%);
+  /* Background color */
+  color: #fff;
+  /* Text color */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  /* Padding for height */
+  position: fixed;
+  width: 100%;
+  /* Full width of the viewport */
+  max-width: 1200px;
+  /* Maximum width of the container */
+  margin: 0 auto;
+  /* Center the container horizontally */
+  top: 0;
+}
+
+/* General Button Styling */
+.sign-in-btn, .sign-out-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* General Button Styling */
+.sign-in-btn, .sign-out-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  /* Reduced padding */
+  border-radius: 4px;
+  /* Slightly smaller border-radius */
+  border: none;
+  font-size: 14px;
+  /* Smaller font size */
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Sign-In Button */
+.sign-in-btn {
+  background-color: hsl(210deg, 30%, 24%);
+  /* Dark blue background */
+  color: #fff;
+  /* White text */
+}
+
+.sign-in-btn:hover, .sign-in-btn:focus {
+  background-color: hsl(210deg, 30%, 30%);
+  /* Slightly darker blue on hover/focus */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  /* Reduced shadow */
+}
+
+/* Sign-Out Button */
+.sign-out-btn {
+  background-color: hsl(0deg, 80%, 60%);
+  /* Red background */
+  color: #fff;
+  /* White text */
+}
+
+.sign-out-btn:hover, .sign-out-btn:focus {
+  background-color: hsl(0deg, 80%, 50%);
+  /* Slightly darker red on hover/focus */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  /* Reduced shadow */
+}
+
+/* Disabled State */
+.sign-in-btn:disabled, .sign-out-btn:disabled {
+  background-color: hsl(0deg, 0%, 80%);
+  /* Light gray background for disabled state */
+  color: hsl(0deg, 0%, 50%);
+  /* Darker gray text */
+  cursor: not-allowed;
+  /* Change cursor to not-allowed */
+  box-shadow: none;
+  /* Remove shadow for disabled state */
+}
+
+/* Reset */
+/* Variables */
+/* Main Styles */
+.intro-content {
+  width: 800px;
+  /* Adjust as needed */
+  font-size: 0;
+  text-align: center;
+  position: relative;
+  margin: 50px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.intro-content .content-item {
+  display: inline-block;
+  margin: 10px;
+  text-align: left;
+  opacity: 0.99;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+}
+.intro-content .content-item:before {
+  content: "";
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(100%);
+}
+.intro-content .content-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+}
+.intro-content .content-item .details {
+  font-size: 16px;
+  padding: 20px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+.intro-content .content-item .details .title {
+  line-height: 1.2;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.intro-content .content-item .details .info {
+  line-height: 1.4;
+  font-size: 14px;
+}
+.intro-content .content-item:hover:before {
+  opacity: 1;
+  transform: translateY(0);
+}
+.intro-content .content-item:hover .details .title {
+  transition-delay: 0.15s;
+}
+.intro-content .content-item:hover .details .info {
+  transition-delay: 0.25s;
 }
 
 /*# sourceMappingURL=theme.compiled.css.map */

@@ -125,4 +125,112 @@
   margin: 20px auto; /* Centered with margin */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
+/* Stylish heading container */
+.stylish-heading {
+  font-size: clamp(3rem, 15vmin, 8rem);
+  font-family: 'Poppins', sans-serif;
+  color: hsl(210, 30%, 24%);
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-top: 100px; /* Adjust as needed to account for header height */
+}
 
+.stylish-heading:before,
+.stylish-heading:after {
+  content: '';
+  position: absolute;
+  top: 95%;
+  width: 150%;
+  aspect-ratio: 3 / 1;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  border: 6px solid hsl(280, 86%, 3%);
+  mask: conic-gradient(from var(--start), white 0 var(--spread), transparent var(--spread));
+  --spread: 140deg;
+  --start: 290deg;
+}
+
+.stylish-heading:after {
+  transform: rotate(-45deg);
+}
+
+/* Header styling */
+.header-main {
+  background-color: hsl(210, 30%, 24%); /* Background color */
+  color: #fff; /* Text color */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px; /* Padding for height */
+  position: fixed;
+  width: 100%; /* Full width of the viewport */
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+  top: 0;
+  
+}
+
+
+/* General Button Styling */
+.sign-in-btn, .sign-out-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* General Button Styling */
+.sign-in-btn, .sign-out-btn {
+  display: inline-block;
+  padding: 6px 12px; /* Reduced padding */
+  border-radius: 4px; /* Slightly smaller border-radius */
+  border: none;
+  font-size: 14px; /* Smaller font size */
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Sign-In Button */
+.sign-in-btn {
+  background-color: hsl(210, 30%, 24%); /* Dark blue background */
+  color: #fff; /* White text */
+}
+
+.sign-in-btn:hover, .sign-in-btn:focus {
+  background-color: hsl(210, 30%, 30%); /* Slightly darker blue on hover/focus */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+/* Sign-Out Button */
+.sign-out-btn {
+  background-color: hsl(0, 80%, 60%); /* Red background */
+  color: #fff; /* White text */
+}
+
+.sign-out-btn:hover, .sign-out-btn:focus {
+  background-color: hsl(0, 80%, 50%); /* Slightly darker red on hover/focus */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+/* Disabled State */
+.sign-in-btn:disabled, .sign-out-btn:disabled {
+  background-color: hsl(0, 0%, 80%); /* Light gray background for disabled state */
+  color: hsl(0, 0%, 50%); /* Darker gray text */
+  cursor: not-allowed; /* Change cursor to not-allowed */
+  box-shadow: none; /* Remove shadow for disabled state */
+}
