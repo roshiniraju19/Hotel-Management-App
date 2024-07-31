@@ -160,20 +160,57 @@
   transform: rotate(-45deg);
 }
 
-/* Header styling */
-.header-main {
+// .header-main {
+//   background-color: hsl(210, 30%, 24%); /* Background color */
+//   color: #fff; /* Text color */
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 20px 30px; /* Padding for height */
+//   width: 100%; /* Full width of the viewport */
+//   max-width: 1200px; /* Maximum width of the container */
+//   margin: 0 auto; /* Center the container horizontally */
+//   top: 0;
+//   position: fixed; /* Fix the navbar at the top */
+//   z-index: 1000; /* Ensure it is above other content */
+//   margin-bottom: 20px; /* Add bottom margin for spacing */
+// }
+
+.nav-bar{
   background-color: hsl(210, 30%, 24%); /* Background color */
   color: #fff; /* Text color */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 30px; /* Padding for height */
-  position: fixed;
+  padding: 40px 30px; /* Increase padding for height */
+  width: 100%; /* Full width of the viewport */
+  margin: 0; /* Remove margin */
+  top: 0;
+  position: fixed; /* Fix the navbar at the top */
+  z-index: 1000; /* Ensure it is above other content */
+}
+
+.inside-navbar {
+  background-color: hsl(210, 30%, 24%); /* Background color */
+  color: #fff; /* Text color */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 70px; /* Padding for height */
   width: 100%; /* Full width of the viewport */
   max-width: 1200px; /* Maximum width of the container */
   margin: 0 auto; /* Center the container horizontally */
   top: 0;
-  
+  position: fixed; /* Fix the navbar at the top */
+  z-index: 1000; /* Ensure it is above other content */
+  margin-bottom: 20px; /* Add bottom margin for spacing */
+}
+
+.image{
+  max-height: 100%; /* Ensure the image doesn't exceed the height of the navbar */
+  max-width: 200px; /* Set a maximum width for the image */
+  height: auto; /* Maintain aspect ratio */
+  width: auto; /* Adjust width automatically */
 }
 
 
@@ -234,3 +271,10 @@
   cursor: not-allowed; /* Change cursor to not-allowed */
   box-shadow: none; /* Remove shadow for disabled state */
 }
+
+.content-container {
+  padding-top: 200px; /* Adjust based on the height of your navbar */
+  /* Optional additional styling */
+  padding: 20px;
+}
+
