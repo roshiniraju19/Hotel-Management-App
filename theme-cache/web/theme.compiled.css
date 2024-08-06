@@ -27996,6 +27996,34 @@ input[type=checkbox].three-state-checkbox + .control-label {
   padding: 20px;
 }
 
+.new-card {
+  background-color: #fff;
+  /* Background color for the card */
+  border: 1px solid #ddd;
+  /* Border color for the card */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+  overflow: hidden;
+  /* Clip any content that overflows */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Transition for hover effect */
+  width: 500px;
+  /* Width of each card */
+  padding: 20px;
+  /* Padding inside the card */
+  text-align: center;
+  /* Center text inside the card */
+}
+
+.new-card:hover {
+  transform: translateY(-10px);
+  /* Lift the card up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Intensify shadow on hover */
+}
+
 /* Reset */
 /* Variables */
 /* Main Styles */
