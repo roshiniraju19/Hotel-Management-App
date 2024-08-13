@@ -27901,8 +27901,6 @@ input[type=checkbox].three-state-checkbox + .control-label {
   /* Fix the navbar at the top */
   z-index: 1000;
   /* Ensure it is above other content */
-  margin-bottom: 20px;
-  /* Add bottom margin for spacing */
 }
 
 .image {
