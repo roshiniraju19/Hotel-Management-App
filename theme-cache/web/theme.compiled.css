@@ -3606,6 +3606,216 @@
   -webkit-overflow-scrolling: auto;
 }
 
+.mxwc-state-badge {
+  border-radius: 16px;
+  min-width: 18px;
+  min-height: 18px;
+  padding: 4px 8px 4px 8px;
+  color: white;
+  white-space: nowrap;
+  display: block;
+  width: fit-content;
+}
+.mxwc-state-badge.mxwc-state-badge-success {
+  background: #3cb33d;
+}
+.mxwc-state-badge.mxwc-state-badge-primary {
+  background: #264ae5;
+}
+.mxwc-state-badge.mxwc-state-badge-warning {
+  background: #eca51c;
+}
+.mxwc-state-badge.mxwc-state-badge-danger {
+  background: #e33f4e;
+}
+.mxwc-state-badge.mxwc-state-badge-default {
+  color: #0a1325;
+  background: #e7e7e9;
+}
+
+.mxwc-timeline-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+.mxwc-timeline-dot.mxwc-timeline-dot-success {
+  background: #3cb33d;
+}
+.mxwc-timeline-dot.mxwc-timeline-dot-primary {
+  background: #264ae5;
+}
+.mxwc-timeline-dot.mxwc-timeline-dot-warning {
+  background: #eca51c;
+}
+.mxwc-timeline-dot.mxwc-timeline-dot-danger {
+  background: #e33f4e;
+}
+.mxwc-timeline-dot.mxwc-timeline-dot-default {
+  background: #e7e7e9;
+}
+
+.mxwc-activity-timeline .widget-timeline-events-wrapper {
+  padding-top: 0;
+  margin-left: 48px;
+}
+.mxwc-activity-timeline .widget-timeline-icon-wrapper {
+  padding-top: 32px;
+}
+.mxwc-activity-timeline .widget-timeline-icon-wrapper .widget-timeline-icon-circle {
+  width: 10px;
+  height: 10px;
+}
+.mxwc-activity-timeline ul > li.widget-timeline-event {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.mxwc-activity-timeline ul > li.widget-timeline-event .mxwc-activity-icon {
+  margin: 0 4px;
+  width: 32px;
+  height: auto;
+}
+.mxwc-activity-timeline ul > li.widget-timeline-event .widget-accordion.widget-accordion-striped > .widget-accordion-group {
+  border-radius: 0;
+}
+.mxwc-activity-timeline ul > li.widget-timeline-event .widget-accordion.widget-accordion-striped > .widget-accordion-group > .widget-accordion-group-header > .widget-accordion-group-header-button {
+  background-color: unset;
+  border-radius: 0;
+}
+.mxwc-activity-timeline ul > li.widget-timeline-event .widget-accordion.widget-accordion-striped > .widget-accordion-group > .widget-accordion-group-content-wrapper > .widget-accordion-group-content {
+  padding: 8px 16px 16px 16px;
+}
+.mxwc-activity-timeline ul > li.widget-timeline-event .mxwc-basic-activity-container {
+  padding: 16px;
+  border-bottom: 1px #ced0d3 solid;
+}
+.mxwc-activity-timeline .mxwc-activity-detail {
+  padding-left: 56px;
+}
+.mxwc-activity-timeline .mxwc-duration-container {
+  min-width: 150px;
+}
+.mxwc-activity-timeline .mx-link.mxwc-remove-link {
+  color: #6c717e;
+}
+.mxwc-activity-timeline .mx-link.mxwc-remove-link:hover, .mxwc-activity-timeline .mx-link.mxwc-remove-link:active, .mxwc-activity-timeline .mx-link.mxwc-remove-link:focus {
+  text-decoration: none;
+  cursor: default;
+}
+.mxwc-activity-timeline .mx-link.mxwc-remove-link.mxwc-overdue {
+  color: #e33f4e;
+}
+
+.mxwc-trancating-groupbox.mx-groupbox {
+  display: grid;
+  border: none;
+}
+.mxwc-trancating-groupbox.collapsed .mx-groupbox-header {
+  color: #0a1325;
+}
+.mxwc-trancating-groupbox .mx-groupbox-header {
+  grid-area: 1/1/2/2;
+  background: none;
+  border: none;
+  padding: 0;
+  color: transparent;
+}
+.mxwc-trancating-groupbox .mx-groupbox-header .glyphicon {
+  font-size: 200%;
+  color: #0a1325;
+}
+.mxwc-trancating-groupbox .mx-groupbox-body {
+  grid-area: 1/1/2/2;
+  border: none;
+  background: none;
+  padding: 0 35px 0 0;
+}
+
+.mx-listview[class*=lv-col] > ul {
+  flex-wrap: wrap;
+}
+
+.mxwc-dv-footer-remove-border > .mx-dataview-controls {
+  border-top: 0;
+}
+
+.mxwc-jump-to-popup {
+  min-width: 800px;
+}
+.mxwc-jump-to-popup .mx-image {
+  max-width: 32px;
+}
+.mxwc-jump-to-popup .mxwc-img-activity-placeholder {
+  opacity: 0.3;
+}
+
+.mxwc-jump-to-activity-selector select {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mxwc-lv-attachments .mx-listview-empty {
+  display: none;
+}
+
+.mxwc-lv-assignees.mx-listview > ul {
+  margin: 0;
+}
+.mxwc-lv-assignees .mx-listview-empty {
+  display: none;
+}
+.mxwc-lv-assignees .mx-button.mx-listview-loadMore {
+  text-align: left;
+  width: auto;
+  margin: 8px 0 0 0;
+}
+
+.mxwc-outcome-header .mx-text {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.mxwc-custom-text-filter-container button {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+}
+.mxwc-custom-text-filter-container .mx-textbox {
+  margin-bottom: 0;
+  width: 100%;
+}
+.mxwc-custom-text-filter-container .mx-textbox input[type=text] {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.mxwc-admin-icon.mx-link {
+  color: #0a1325;
+  display: inline;
+  margin-left: 8px;
+}
+.mxwc-admin-icon.mx-link:hover, .mxwc-admin-icon.mx-link:active, .mxwc-admin-icon.mx-link:focus {
+  text-decoration: none;
+  cursor: default;
+}
+
+.mxwc-admin-badge.mx-link {
+  color: #0a1325;
+  padding: 4px 8px 4px 8px;
+  display: inline-block;
+  margin-left: 8px;
+  font-weight: bold;
+}
+.mxwc-admin-badge.mx-link.align-pageheader {
+  vertical-align: middle;
+  margin-bottom: 8px;
+}
+.mxwc-admin-badge.mx-link:hover, .mxwc-admin-badge.mx-link:active, .mxwc-admin-badge.mx-link:focus {
+  text-decoration: none;
+  cursor: default;
+}
+
 :root {
   /*
    DISCLAIMER:
@@ -27887,22 +28097,26 @@ input[type=checkbox].three-state-checkbox + .control-label {
   /* Text color */
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 20px 70px;
   /* Padding for height */
   width: 100%;
-  /* Full width of the viewport */
   max-width: 1200px;
-  /* Maximum width of the container */
   margin: 0 auto;
-  /* Center the container horizontally */
   top: 0;
-  position: fixed;
-  /* Fix the navbar at the top */
   z-index: 1000;
-  /* Ensure it is above other content */
 }
 
+/*
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 70px; /* Padding for height */
+/* width: 100%; Full width of the viewport */
+/* max-width: 1200px; /* Maximum width of the container */
+/* margin: 0 auto; /* Center the container horizontally */
+/* top: 0;
+position: fixed; /* Fix the navbar at the top */
+/* z-index: 1000; /* Ensure it is above other content */
 .image {
   max-height: 100%;
   /* Ensure the image doesn't exceed the height of the navbar */
@@ -28045,6 +28259,14 @@ invoice-content {
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+
+full-bar {
+  background-color: hsl(210deg, 30%, 24%);
+  height: 60px;
+  /* Sets the height of the navbar */
+  width: 100%;
+  position: fixed;
 }
 
 /* Reset */
