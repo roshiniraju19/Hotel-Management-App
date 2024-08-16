@@ -335,3 +335,33 @@ full-bar{
   width: 100%; 
   position: fixed; 
 }
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensures the parent container takes full width */
+  padding: 20px; /* Add padding around the button container */
+}
+
+.center-button button {
+  display: inline-block;
+  padding: 10px 20px; /* Add padding inside the button itself */
+  border-radius: 5px; /* Optional: add some rounding to the button */
+}
+
+/* Basic container styling */
+.container {
+  background-color: #ffffff; /* Initial background color */
+  padding: 20px;
+  border: 2px solid #e0e0e0; /* Initial border color */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Initial shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the container */
+.container:hover {
+  background-color: #f0f4f8; /* Background color on hover */
+  border-color: #c0c8d0; /* Border color on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Increased shadow on hover */
+}
