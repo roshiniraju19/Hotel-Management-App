@@ -1,0 +1,39 @@
+ <!-- <?xml version="1.0" encoding="utf-8" ?>
+<package xmlns="http://www.mendix.com/package/1.0/">
+    <clientModule name="HeadingWidget" version="1.0.0" xmlns="http://www.mendix.com/clientModule/1.0/">
+        <widgetFiles>
+            <widgetFile path="HeadingWidget.xml"/>
+        </widgetFiles>
+        <files>
+            <file path="mendix/headingwidget"/>
+        </files>
+    </clientModule>
+ </package> -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://www.mendix.com/package/1.0/">
+    <clientModule name="HeadingWidget" version="1.0.0" xmlns="http://www.mendix.com/clientModule/1.0/">
+        <widgetFiles>
+            <widgetFile path="HeadingWidget.xml"/>
+        </widgetFiles>
+        <files>
+            <file path="mendix/headingwidget"/>
+        </files>
+    </clientModule>
+</package>
+<widget id="HeadingWidget" name="HeadingWidget" description="A customizable heading widget" pluginWidget="true" supportedPlatform="all">
+    <properties>
+        <property key="headingSize" type="string">
+            <caption>Heading Size</caption>
+            <description>Choose the size of the heading (e.g., 16px, 2em)</description>
+        </property>
+        <property key="font" type="string">
+            <caption>Font</caption>
+            <description>Choose the font of the heading (e.g., Arial, Times New Roman)</description>
+        </property>
+        <property key="text" type="string">
+            <caption>Text</caption>
+            <description>The text to display as the heading</description>
+        </property>
+    </properties>
+</widget> 

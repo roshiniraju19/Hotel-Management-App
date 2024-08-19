@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.headingwidgets.HeadingWidgets" pluginWidget="true" 
+    needsEntityContext="false" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Heading Widgets</name>
+    <description>My widget description</description>
+    <icon/>
+    <properties>
+      <property key="headingText" type="string" defaultValue="Your Heading">
+         <caption>Heading Text</caption>
+      </property>
+      <property key="fontSize" type="integer" defaultValue="24">
+         <caption>Font Size</caption>
+         <category>Appearance</category>
+      </property>
+      <property key="fontStyle" type="enumeration">
+         <caption>Font Style</caption>
+         <enumerationValues>
+            <enumerationValue key="Normal" caption="Normal" />
+            <enumerationValue key="Italic" caption="Italic" />
+            <enumerationValue key="Bold" caption="Bold" />
+         </enumerationValues>
+      </property>
+   </properties>
+</widget>
