@@ -12,12 +12,12 @@ package myfirstmodule.actions;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 
-public class concat_String extends CustomJavaAction<java.lang.String>
+public class concat_String_2 extends CustomJavaAction<java.lang.String>
 {
 	private final java.lang.String string1;
 	private final java.lang.String string2;
 
-	public concat_String(
+	public concat_String_2(
 		IContext context,
 		java.lang.String _string1,
 		java.lang.String _string2
@@ -43,7 +43,7 @@ public class concat_String extends CustomJavaAction<java.lang.String>
 	@java.lang.Override
 	public java.lang.String toString()
 	{
-		return "concat_String";
+		return "concat_String_2";
 	}
 
 	// BEGIN EXTRA CODE

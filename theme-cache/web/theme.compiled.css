@@ -28045,7 +28045,7 @@ input[type=checkbox].three-state-checkbox + .control-label {
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  margin-top: 100px;
+  margin-top: 10px;
   /* Adjust as needed to account for header height */
 }
 
@@ -28309,6 +28309,45 @@ full-bar {
   /* Border color on hover */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   /* Increased shadow on hover */
+}
+
+.simple-btn {
+  background-color: #4CAF50;
+  /* Green background */
+  color: white;
+  /* White text */
+  transition: background-color 0.4s ease;
+  /* Smooth transition */
+  font-size: 30px;
+  /* Initial font size */
+}
+
+.simple-btn:hover {
+  background-color: #cb1381;
+  /* Darker green on hover */
+  color: white;
+  /* White text */
+  border-radius: 16px;
+  /* Initial border radius */
+}
+
+.simple-btn2 {
+  background-color: #4CAF50;
+  /* Green background */
+  color: white;
+  /* White text */
+}
+
+.simple-btn2:hover {
+  background-color: #cb1381;
+  /* Darker green on hover */
+  color: white;
+  /* White text */
+}
+
+.simple-btn2:active {
+  background-color: yellow;
+  /* Yellow background on click */
 }
 
 /* Reset */

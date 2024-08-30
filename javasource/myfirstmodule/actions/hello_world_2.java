@@ -12,11 +12,11 @@ package myfirstmodule.actions;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 
-public class hello_world extends CustomJavaAction<java.lang.String>
+public class hello_world_2 extends CustomJavaAction<java.lang.String>
 {
 	private final java.lang.String input;
 
-	public hello_world(
+	public hello_world_2(
 		IContext context,
 		java.lang.String _input
 	)
@@ -40,7 +40,7 @@ public class hello_world extends CustomJavaAction<java.lang.String>
 	@java.lang.Override
 	public java.lang.String toString()
 	{
-		return "hello_world";
+		return "hello_world_2";
 	}
 
 	// BEGIN EXTRA CODE
